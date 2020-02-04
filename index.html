@@ -13,8 +13,14 @@
 </a-scene>-->
 
 <a-scene id="scene" background="color: #FAFAFA" environment="preset: default; seed: 42; ">
+    <a-assets>
+        <img id="cube-texture" src="images/12.jpg">
+    </a-assets>
 
-    <a-box id="box" material="color: #ff80ff" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-box id="box" scale="1.46 5 1"  position="-1.19387 2.49732 -3.02798"
+           rotation="0 0 0" color="#4CC3D9"
+           material="src: #cube-texture">
+    </a-box>
 </a-scene>
 </body>
 </html>
