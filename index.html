@@ -12,16 +12,22 @@
     <a-sky color="#ECECEC"></a-sky>
 </a-scene>-->
 
-<a-scene id="scene" background="color: #FAFAFA" environment="preset: default; ground: flat; groundTexture: none; groundColor: #232426; skyType: gradient; skyColor:#ff0000">
+<a-scene id="scene" fog="density: 0; color: #ff3e3e; far: 92; near: 1; type: linear" background="color: #FAFAFA"
+         environment="preset: default; ground: flat; groundTexture: walkernoise;">
 
     <a-assets>
-        <img id="cube-texture" src="images/12.jpg">
+        <img id="cube-texture" src="images/floor.jpg">
     </a-assets>
 
-    <a-box id="box" scale="1.46 5 1"  position="-1.19387 2.49732 -3.02798"
+    <a-box id="box" scale="200 5 200"  position="-1.632 -2.458 -2.149"
            rotation="0 0 0" color="#4CC3D9"
            material="src: #cube-texture">
+    </a-box>
+
+    <a-box id="box1" scale="165 5 2"  position="-1.250 2.715 -82.613"
+           rotation="0 0 0" color="#000000">
     </a-box>
 </a-scene>
 </body>
 </html>
+
