@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Monika-Ananieva/XR-assignment#readme",
   "dependencies": {
-    "aframe-watcher": "^1.4.0"
+    "aframe-watcher": "^1.4.0",
+    "surge": "^0.21.3"
   }
 }
