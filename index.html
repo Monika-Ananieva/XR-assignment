@@ -13,7 +13,7 @@
 
         <img id="cube-texture" src="images/floor_2.jpg">
 
-
+        <!-- Textures on the POOL-BALLS -->
         <img id="01-yellow" src="images/01-yellow.jpg" alt="texture-image">
         <img id="02-blue" src="images/02-blue.jpg" alt="texture-image">
         <img id="03-red" src="images/03-red.jpg" alt="texture-image">
@@ -22,13 +22,15 @@
         <img id="06-green" src="images/06-green.jpg" alt="texture-image">
         <img id="07-red" src="images/07-red.jpg" alt="texture-image">
         <img id="08-black" src="images/08-black.jpg" alt="texture-image">
-        <img id="orange02" src="images/orange-02.png" alt="">
-        <img id="blue02" src="images/blue-02.png" alt="">
-        <img id="red02" src="images/red-02.png" alt="">
-        <img id="dark-blue02" src="images/dark-blue-02.png" alt="">
-        <img id="green02" src="images/green-02.png" alt="">
-        <img id="dark-red02" src="images/dark-red-02.png" alt="">
-        <img id="yellow02" src="images/yellow-02.png" alt="">
+        <img id="orange02" src="images/orange-02.png" alt="texture-image">
+        <img id="blue02" src="images/blue-02.png" alt="texture-image">
+        <img id="red02" src="images/red-02.png" alt="texture-image">
+        <img id="dark-blue02" src="images/dark-blue-02.png" alt="texture-image">
+        <img id="green02" src="images/green-02.png" alt="texture-image">
+        <img id="dark-red02" src="images/dark-red-02.png" alt="texture-image">
+        <img id="yellow02" src="images/yellow-02.png" alt="texture-image">
+
+        <img id="cue01" src="images/cue.jpg" alt="texture-image">y
     </a-assets>
 
     <!-- THE FLOOR BOX  -->
@@ -56,7 +58,7 @@
 
 
     <!-- 1 to 15 SPHERES  -->
-      <a-sphere id="ball-1" scale="5 5 5" position="163.3455 9.5 -0.98814" rotation="0 -178.60068502479484 0" radius="2" material="src:#01-yellow"></a-sphere>
+    <a-sphere id="ball-1" scale="5 5 5" position="42.24181 9.5 -24.01345" rotation="0 -178.60068502479484 0" radius="2" material="src:#01-yellow"></a-sphere>
 
     <a-sphere id="ball-2" rotation="0 -24.314609951966748 0" scale="5 5 5" position="-3.14647 9.5 -78.86998" radius="2" material="src:#02-blue"></a-sphere>
 
@@ -66,7 +68,7 @@
 
     <a-sphere id="ball-5" rotation="0 -166.3651713097761 0" scale="5 5 5" position="66.98935 9.5 -77.16064" radius="2" material="src:#05-orange"> </a-sphere>
 
-    <a-sphere id="ball-6" scale="5 5 5" position="-89.4578 9.5 -2.238" radius="2" material="src:#06-green"> </a-sphere>
+    <a-sphere id="ball-6" scale="5 5 5" position="-99.98356 9.5 15.19177" radius="2" material="src:#06-green"> </a-sphere>
 
     <a-sphere id="ball-7" rotation="0 28.414122976127786 0" scale="5 5 5" position="-139.47336 9.5 55.53615" radius="2" material="src:#07-red"> </a-sphere>
 
@@ -85,11 +87,22 @@
 
     <a-sphere id="ball14" scale="5 5 5" position="40 9.5 -54" radius="2" material="src:#green02" animation="property: position; to: -15.420 9.5 -17.537 dur: 1500.000; easing: easeInOutQuad;" ></a-sphere>
 
-     <a-sphere id="ball15" rotation="-179.9998479605043 -13.135057453374124 -179.9998479605043" scale="5 5 5" position="139 9.5 -69.48652" radius="2" material="src:#dark-red02" ></a-sphere>
+    <a-sphere id="ball15" rotation="-179.9998479605043 -13.135057453374124 -179.9998479605043" scale="5 5 5" position="139 9.5 -69.48652" radius="2" material="src:#dark-red02" ></a-sphere>
     
     <a-sphere id="ball16" scale="5 5 5" position="40 9.5 -54" radius="2" color="white" animation="property:position; to: -44.090 9.5 -18; dur: 2000.000; easing: easeInOutQuad;"></a-sphere>
 
+    <a-sphere id="ball-black" scale="5 5 5" position="154.37992 9.5 21.14832" radius="2" color="black"></a-sphere>
+    <!-- POOL CUE SHAPE -->
 
+    <a-cylinder id="cue" scale="1 105.03091 1" rotation="-0.16214705602202298 90.02 90.5"
+                geometry="radius: 2; primitive: cone; radiusBottom: 2.5; radiusTop: 0.5"
+                position="-171.38431 1.25198 -2.48478" radius="0.5" height="1.5" color="#FFC65D" material="src:#cue01">
+    </a-cylinder>
+
+    <a-cylinder id="cue02" scale="1 105.03091 1" rotation="-0.16214705602202298 45.781619662133295 90.49982965650379"
+                geometry="radius: 2; primitive: cone; radiusBottom: 2.5; radiusTop: 0.5"
+                position="103.0465 1.25198 17.61809" radius="0.5" height="1.5" color="#FFC65D" material="src:#cue01">
+    </a-cylinder>
 </a-scene>
 </body>
 </html>
