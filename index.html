@@ -30,7 +30,9 @@
         <img id="dark-red02" src="images/dark-red-02.png" alt="texture-image">
         <img id="yellow02" src="images/yellow-02.png" alt="texture-image">
 
-        <img id="cue01" src="images/cue.jpg" alt="texture-image">y
+        <img id="cue01" src="images/cue.jpg" alt="texture-image">
+
+        <audio id="sound-asset" src="sounds/billiards_sound.mp3" preload="auto"></audio>
     </a-assets>
 
     <!-- THE FLOOR BOX  -->
@@ -104,6 +106,10 @@
                 geometry="radius: 2; primitive: cone; radiusBottom: 2.5; radiusTop: 0.5"
                 position="103.0465 1.25198 17.61809" radius="0.5" height="1.5" color="#FFC65D" material="src:#cue01">
     </a-cylinder>
+
+    <!-- SOUND -->
+    <a-entity id="sound" scale="0.66 100 200" geometry="primitive: box; width: 500" position="-5.76285 6.10636 -20.69513" sound="src: #sound-asset; autoplay: true; loop: true; volume: 2; positional: false"></a-entity>
+
 </a-scene>
 </body>
 </html>
